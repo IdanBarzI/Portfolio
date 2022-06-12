@@ -10,17 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/IdanLogo.png'
+import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 import './index.scss'
 
 const SideBar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/Portfolio">
+      <Link className="logo" to="/">
         <img src={LogoS} alt="logo" width="52px" height="52px" />
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="logo" /> */}
       </Link>
       <nav>
-        <NavLink exact="false" activeclassname="active" to="/Portfolio/">
+        <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
@@ -28,7 +30,7 @@ const SideBar = () => {
           exact="true"
           activeclassname="active"
           className="about-link"
-          to="/Portfolio/about"
+          to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -36,7 +38,7 @@ const SideBar = () => {
         <NavLink
           activeclassname="active"
           className="experience-link"
-          to="/Portfolio/experience"
+          to="/experience"
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
@@ -44,7 +46,7 @@ const SideBar = () => {
         <NavLink
           activeclassname="active"
           className="portfolio-link"
-          to="/Portfolio/projects"
+          to="/projects"
         >
           <FontAwesomeIcon icon={faDiagramProject} color="#4d4d4e" />
         </NavLink>
@@ -52,7 +54,7 @@ const SideBar = () => {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/Portfolio/contact"
+          to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
