@@ -10,19 +10,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/IdanLogo.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 import './index.scss'
 
 const SideBar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/Portfolio/home">
+      <Link className="logo" to="/Portfolio">
         <img src={LogoS} alt="logo" width="52px" height="52px" />
-        {/* <img className="sub-logo" src={LogoSubtitle} alt="logo" /> */}
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/Portfolio/home">
+        <NavLink exact="false" activeclassname="active" to="/Portfolio/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
