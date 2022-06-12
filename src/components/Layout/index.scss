@@ -19,6 +19,7 @@
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore', cursive;
+  z-index: -1;
 }
 
 .bottom-tag-html {
@@ -42,7 +43,8 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.portfolio-page,
+.container.experience-page {
   h1 {
     font-size: $text-l4;
     font-family: 'Coolvetica';
@@ -118,10 +120,11 @@
 @media only screen and (max-width: 768px) {
   .container.contact-page,
   .container.about-page,
-  .container.portfolio-page {
+  .container.portfolio-page,
+  .container.experience-page {
     .text-zone {
       position: absolute;
-      left: 23%;
+      left: 25%;
       top: 60%;
     }
   }

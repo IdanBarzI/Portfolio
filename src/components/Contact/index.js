@@ -1,6 +1,5 @@
-import { useEffect, useState,useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import Snackbar from '../../UiKit/Snackbar'
@@ -8,12 +7,11 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const snackbarRef = useRef(null);
+  const snackbarRef = useRef(null)
   const form = useRef()
 
   useEffect(() => {
-    let timeoutId = 
-    setTimeout(() => {
+    let timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
 
@@ -34,11 +32,14 @@ const Contact = () => {
       )
       .then(
         () => {
-            snackbarRef.current.show( 'Message successfully sent!',"success");
+          snackbarRef.current.show('Message successfully sent!', 'success')
         },
         (e) => {
-            console.log(e);
-            snackbarRef.current.show('Failed to send the message, please try again', "fail");
+          console.log(e)
+          snackbarRef.current.show(
+            'Failed to send the message, please try again',
+            'fail'
+          )
         }
       )
   }
@@ -55,9 +56,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in any work opportunities - especially ambitious or
+            large projects / established IT company. However, if you have other
+            request or question, don't hesitate to contact me using below form
+            either :).
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

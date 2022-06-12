@@ -2,7 +2,7 @@
 
 .nav-bar {
   background-color: #181818;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -80,6 +80,18 @@
     a.about-link {
       &:after {
         content: 'ABOUT';
+      }
+    }
+
+    a.experience-link {
+      &:after {
+        content: 'EXPERIENCE';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
       }
     }
 

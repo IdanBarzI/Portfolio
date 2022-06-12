@@ -1,0 +1,38 @@
+.experience-page {
+  padding-left: 100px;
+  padding-right: 50px;
+  width: calc(100% - 150px);
+  position: initial;
+  height: 100%;
+  overflow: auto;
+
+  h1.page-title {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  p {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .date {
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (max-width: 1169px) {
+  .experience-page {
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 100px;
+    }
+    .date {
+      color: rgb(18, 13, 13);
+    }
+  }
+}

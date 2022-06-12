@@ -1,0 +1,52 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/ExpenseTool.png",
+      "title": "Expense Monitor",
+      "description": "React, JSX, Rdux, Nodejs, ModgoDB",
+      "url": "https://github.com/IdanBarzI/The-Money-Expense-Tool/blob/main/README.md"
+    },
+    {
+      "cover": "/portfolio/BackGammon.png",
+      "title": "BackGammon & Chat",
+      "description": "React, JSX, SignalR, asp.Net, C#",
+      "url": "https://github.com/yakov10105/chat_project_server"
+    },
+    {
+      "cover": "/portfolio/Customer-Manager.png",
+      "title": "Coach Customer Manager",
+      "description": "Wpf, C#, Sqllite, MVVM",
+      "url": "https://github.com/IdanBarzI/Customer-Manager-Fitness"
+    },
+    {
+      "cover": "/portfolio/Ecommerce.png",
+      "title": "Ecommerce Website",
+      "description": "React, JSX, Material UI",
+      "url": "https://github.com/IdanBarzI/Lift-Legit"
+    },
+    {
+      "cover": "/portfolio/PhotoAlbum.png",
+      "title": "Photo Album & Camera",
+      "description": "Uwp, C#",
+      "url": "https://github.com/IdanBarzI/Photo-Album"
+    },
+    {
+      "cover": "/portfolio/BookStore.png",
+      "title": "Book Store",
+      "description": "Wpf, C#, SQL MS ,SOLDID",
+      "url": "https://github.com/IdanBarzI/BookStore"
+    },
+    {
+      "cover": "/portfolio/NetflixClone.png",
+      "title": "Netflix Clone",
+      "description": "React, JSX",
+      "url": "https://github.com/IdanBarzI/Movie-Joy"
+    },
+    {
+      "cover": "/portfolio/Nexter.png",
+      "title": "Nexter",
+      "description": "JavaScript, Html, SCSS",
+      "url": "https://github.com/IdanBarzI/Nexter-IdanBarzI"
+    }
+  ]
+}
