@@ -17,12 +17,12 @@ import './index.scss'
 const SideBar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/Portfolio/home">
         <img src={LogoS} alt="logo" width="52px" height="52px" />
         {/* <img className="sub-logo" src={LogoSubtitle} alt="logo" /> */}
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink exact="true" activeclassname="active" to="/Portfolio/home">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
@@ -30,7 +30,7 @@ const SideBar = () => {
           exact="true"
           activeclassname="active"
           className="about-link"
-          to="/about"
+          to="/Portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -38,7 +38,7 @@ const SideBar = () => {
         <NavLink
           activeclassname="active"
           className="experience-link"
-          to="/experience"
+          to="/Portfolio/experience"
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
@@ -46,7 +46,7 @@ const SideBar = () => {
         <NavLink
           activeclassname="active"
           className="portfolio-link"
-          to="projects"
+          to="/Portfolio/projects"
         >
           <FontAwesomeIcon icon={faDiagramProject} color="#4d4d4e" />
         </NavLink>
@@ -54,7 +54,7 @@ const SideBar = () => {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/contact"
+          to="/Portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
